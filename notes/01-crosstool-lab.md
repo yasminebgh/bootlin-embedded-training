@@ -46,3 +46,6 @@ uclibc C library
 used in the toolchain are not more recent than the kernel that will run on the board)  gcc version, C library and compiler...) 
 
 7. ./ct-ng build: Produce the toolchain => Downloads all necessary sources (GCC, binutils, C library, the ernel headers...), Configures and compiles each component and creates the final toolchain and install it in the specified folder ![build process](screenshots/Toolchain_buildin)
+
+
+When compiling, the cross-compiler uses the sysroot to find the correct headers and files for the target system ( a mini "fake" of the target's device file system inside your PC)
